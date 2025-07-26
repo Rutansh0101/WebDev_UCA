@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instance Functions</title>
+</head>
+<body>
+    <div class="demo-line">
+        This is demo line. Gotta be replaced with JS!
+    </div>
+    <script defer>
+        const lineToBeChanged = document.querySelector(".demo-line");
+        let a = 1;
+        setInterval(()=>{
+            if(a & 1){
+                lineToBeChanged.innerHTML = "This is replaced Content";
+                a++;
+            }
+            else{
+                lineToBeChanged.innerHTML = "This is replaced Content 2";
+                a++;
+            }
+        }, 2000);
+        // alert("Welcome to the Web");
+    </script>
+</body>
+</html>
